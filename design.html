@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="BlueLog (1).png">
+  <title>Bluelog design</title>
+</head>
+
+<body>
+  <header>
+    <div onclick="window.location.href = '/'" class="logo">
+      <img src="BlueLog.ico" alt="">
+      <h1>BLUELOG</h1>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="design.html">Design</a></li>
+      <li><a href="photo.html">Photo</a></li>
+      <li><a href="dev.html">Développement</a></li>
+    </ul>
+    <div class="contact">
+      <a href="contact.html"><button class="contactbtn">Contact</button></a>
+    </div>
+    <div class="small_menu">
+        <span>
+            <div></div>
+            <div></div>
+        </span>
+        <span>
+            <div></div>
+            <div></div>
+        </span>
+    </div>
+  </header>
+  
+  <section class="home">
+      <div class="gauche">
+          <h1>DESI<span>GN</span></h1>
+          <h4>Une entreprise tout-en-un pour renouveller son identité visuelle, </h4>
+          <p>Nous proposons un service complet d'accompagenement et de réalisation de changement d'identité visuelle, de prise de photos et de développement léger de sites web pour particuliers ou entreprise.</p>
+          <p>Un changement didentité visuelle pour une marque, qu'elle soit bien implantée ou non est toujours un moment délicat. Nous proposons donc un service complet d'accompagnement pour toute la période de préparation en plus du changement de logo ou de couleurs afin que la transition se passe au mieux, pour vous comme pour vos clients. Cette phase de transition n'inclut cependant pas de démarche de communication et/ou de publicité.</p>
+          <button class="savoir-plus">
+              <a href="contact.html">Passer à la commande</a>
+          </button>
+      </div>
+      <div class="droite">
+          <img src="BlueLog.png">
+      </div>
+  </section>
+  
+  <section class="about">
+      <h1 class="title">Les différentes étapes de transition</h1>
+      <div class="list_about">
+          <h1>1</h1>
+          <div class="description">
+              <h3>La découverte</h3>
+              <p>Pour commencer, après nous avoir contactés par mail, nous allons analyszr votre entrprise et comprendre ses valeurs et symboles pour pouvoir la représenter au mieux plus tard. Cette étape est primordiale : sans elle, nous ne pourrons pas travailler sur un changement représentatif de votre entreprise et le résultat risque de ne pas vous convenir. Il faut donc mettre à notre disposition le site potentiel, les différentes polices et couleurs existantes ainsi que les logos et icones présentes.</p>
+          </div>
+      </div>
+      <div class="list_about">
+          <h1>2</h1>
+          <div class="description">
+              <h3>Le travail et premier accord</h3>
+              <p>Ensuite, place à nos experts ! Selon l'empleur du projet, le délai peut varier de quelques jours à quelques semaines. Après une première version, nous vous recontactons pour avoir votre avis. Si le premier jet convient, fin de l'opération. Si il reste des amélioration à faire, retour au travail. Après une deuxième version, le résultat est de nouveau présenté, c'est généralement le moment de l'accord final. Si il reste toujours des modifications à effectuer, elles seront cette fois-ci facturées, selon les discussions préalables, d'où l'intérêt de bien prendre le temps de discutetr avant.</p>
+          </div>
+      </div>
+      <div class="list_about">
+          <h1>3</h1>
+          <div class="description">
+              <h3>La remise du résultat</h3>
+              <p>Pour vous rendre notre travail, nous vous proposons un envoi par mail avec un lien sécurisé à accès temporaire, cela permet de garantir la confidentialité de l'envoi. Le payement sera effectué au moment de la présentation de la dernière version, en main propre si un rendez-vous en région parisienne est possible ou via la plateforme Fivrr.</p>
+          </div>
+      </div>
+      <div class="list_about">
+          <h1>4</h1>
+          <div class="description">
+              <h3>Comment s'effectue une commande ?</h3>
+              <p>Par mesure de sécurité, nous ne pouvons pas proposer de payement directement sur le site. Nous vous proposons donc de nous envoyer un mail <a href="contact.html">(contact)</a>pour discuter de votre commande, du délai, du prix et de la potentielle livraison. Le payement s'effecturera ensuite via la plateforme Fivrr.</p>
+          </div>
+      </div>
+  </section>
+
+  <footer>
+      <p>Ce site appartient à BlueLog | Tous les droits sont réservés.</p>
+  </footer>
+
+  <script>
+      var small_menu = document.querySelector(".small_menu");
+      var menu = document.querySelector(".menu");
+      small_menu.onclick = function(){
+          small_menu.classList.toggle('active');
+          menu.classList.toggle('small');
+      }
+  </script>

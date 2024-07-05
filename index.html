@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="BlueLog (1).png">
+  <title>Bluelog</title>
+</head>
+
+<body>
+  <header>
+      <div onclick="window.location.href = '/'" class="logo">
+        <img src="BlueLog.ico" alt="">
+        <h1>BLUELOG</h1>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="photo.html">Photo</a></li>
+        <li><a href="dev.html">Développement</a></li>
+      </ul>
+      <div class="contact">
+        <a href="contact.html"><button class="contactbtn">Contact</button></a>
+      </div>
+    <div class="small_menu">
+        <span>
+            <div></div>
+            <div></div>
+        </span>
+        <span>
+            <div></div>
+            <div></div>
+        </span>
+    </div>
+  </header>
+
+  <section class="home">
+      <div class="gauche">
+          <h1>BLUE<span>LOG</span></h1>
+          <h4>Une entreprise tout-en-un pour renouveller son identité visuelle, recevoir des photos professionnelles ou encore développer des sites web.</h4>
+          <p>Nous proposons un service complet d'accompagenement et de réalisation de changement d'identité visuelle, de prise de photos et de développement léger de sites web pour particuliers ou entreprise.</p>
+          <button class="savoir-plus">
+              <a href="#">Découvrir notre entreprise</a>
+          </button>
+      </div>
+      <div class="droite">
+          <img src="BlueLog.png">
+      </div>
+  </section>
+
+  <section class="services">
+      <h1 class="title">Nos services</h1>
+      <div class="list_service">
+          <div class="serv">
+              <img src="designweb.png" alt="">
+              <h4>Design</h4>
+              <p>(identité visuelle)</p>
+              <button class="savoir-plus">
+                  <a href="#">En savoir plus</a>
+              </button>
+          </div>
+          <div class="serv">
+              <img src="developpementweb-removebg-preview.png" alt="">
+              <h4>Développement</h4>
+              <p>(présence en ligne)</p>
+              <button class="savoir-plus">
+                  <a href="#">En savoir plus</a>
+              </button>
+          </div>
+          <div class="serv">
+              <img src="photoweb.png" alt="">
+              <h4>Shooting photo</h4>
+              <p>(représenter)</p>
+              <button class="savoir-plus">
+                  <a href="#">En savoir plus</a>
+              </button>
+          </div>
+      </div>
+  </section>
+
+  <section class="about">
+      <h1 class="title">à propos de nous</h1>
+      <div class="list_about">
+          <h1>1</h1>
+          <div class="description">
+              <h3>Qui sommes nous ?</h3>
+              <p>Nous sommes une équipe de 7 passionnés derrère ce projet qui avons décidés de nous lancer dans la créatoion d'une entreprise, d'abord de design puis, en fonction de nos capacités respectives, dans la prise de photo et enfin dans le développement web. Chacun à son rôle précis dans l'entreprise pour proposer le meilleur résultat possible dans tous les domaines.</p>
+          </div>
+      </div>
+      <div class="list_about">
+          <h1>2</h1>
+          <div class="description">
+              <h3>Pourquoi ces domaines ?</h3>
+              <p>La réponse est simple : nous avons fait en fonction de nos capacités ! Avec de nouvelles recrues  dans l'entreprise, nous avons pu élargir notre offre pour toucher un public plus large. Le design est réalisé par Yohann et Camille, le développement par Thomas et Tom et la photo assurée par Louis et Tom. Le reste de l'équipe trravaille dans l'ombre au bon fonctionnement de l'entreprise (gestion des finances, des employés, des projets...)</p>
+          </div>
+      </div>
+      <div class="list_about">
+          <h1>3</h1>
+          <div class="description">
+              <h3>Comment s'effectue une commande ?</h3>
+              <p>Par mesure de sécurité, nous ne pouvons pas proposer de payement directement sur le site. Nous vous proposons donc de nous envoyer un mail <a href="#">(contact)</a>pour discuter de votre commande, du délai, du prix et de la potentielle livraison. Le payement s'effecturera ensuite via la plateforme Fivrr.</p>
+          </div>
+      </div>
+      <div class="list_about">
+          <h1>4</h1>
+          <div class="description">
+              <h3>Quels sont les délais moyens ?</h3>
+              <p>Tout dépend de votre commande. Le plus rapide sera la photographie, généralement quelques jours suffirons (en plus d'un rendez-vous sur place si nécéssaire). Le design de logo et le développement web seront plus long, généralement de une à deux semaines de délai. Le payement ne s'effectue qu'après réception de la commande.</p>
+          </div>
+      </div>
+  </section>
+
+  <section class="contact">
+      <h1 class="title">Contactez nous</h1>
+      <div class="form-image">
+          <form>
+              <input type="text" placeholder="Nom">
+              <input type="text" placeholder="Adresse Mail">
+              <input type="text" placeholder="Objet du Message">
+              <textarea  id="" cols="30" rows="10" placeholder="Votre Message"></textarea>
+              <button class="savoir-plus">
+                  <a href="imposible de lancer Appache sur Uwamp">Envoyer Votre message</a>
+              </button>
+          </form>
+          <div class="image">
+              <img src="siteweb.png" >
+          </div>
+      </div>
+  </section>
+
+  <footer>
+      <p>Ce site appartient à BlueLog | Tous les droits sont réservés.</p>
+  </footer>
+
+  <script>
+      var small_menu = document.querySelector(".small_menu");
+      var menu = document.querySelector(".menu");
+      small_menu.onclick = function(){
+          small_menu.classList.toggle('active');
+          menu.classList.toggle('small');
+      }
+  </script>
+
+</body>
+</html>
